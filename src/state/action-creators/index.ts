@@ -1,6 +1,6 @@
 import { ActionType } from '../action-types'
-import { Dispatch } from 'redux'
-import { Action } from '../actions'
+// import { Dispatch } from 'redux'
+// import { Action } from '../actions'
 
 export const increment = (amount: number) => {
   return {

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './logo.svg'
+
 import './App.css'
 
 import { useSelector, useDispatch } from 'react-redux'
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1> hello world </h1>
+      <h1> hello world 2 </h1>
 
       <h1> {counter.value} </h1>
       <button onClick={() => dispatch(actionCreators.increment(100))}> increment </button>
