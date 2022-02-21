@@ -1,8 +1,11 @@
 import { combineReducers } from 'redux'
-import counterReducer from './counterReducer'
+
+import { counterReducer } from './counter'
+import { blogsReducer } from './blogs'
 
 const rootReducer = combineReducers({
   counter: counterReducer,
+  blogs: blogsReducer,
 })
 
 export default rootReducer

@@ -1,20 +1,10 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
+import { RootState } from '../../state'
 
 export function HomePage() {
-  interface Blog {
-    title: string
-    body: string
-  }
-  const blogs: Blog[] = [
-    {
-      title: 'title1',
-      body: 'this is my first blog body',
-    },
-    {
-      title: 'title2',
-      body: 'this is my 2nd blog body',
-    },
-  ]
+  const blogs = useSelector((state: RootState) => state.blogs)
+
   return (
     <div>
       {blogs &&

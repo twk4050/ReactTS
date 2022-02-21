@@ -9,7 +9,7 @@ const initialState: CounterState = {
   value: 130,
 }
 
-const counterReducer = (state: CounterState = initialState, action: Action) => {
+export const counterReducer = (state: CounterState = initialState, action: Action) => {
   switch (action.type) {
     case ActionType.INCREMENT:
       return {
@@ -26,5 +26,3 @@ const counterReducer = (state: CounterState = initialState, action: Action) => {
       return state
   }
 }
-
-export default counterReducer

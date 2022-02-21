@@ -4,8 +4,8 @@ import './App.scss'
 
 import { Routes, Route } from 'react-router-dom'
 
-import { HomePage, Counter, NavBar } from './components'
-
+import { HomePage, NavBar } from './components'
+import { Counter, AddBlog } from './components'
 function App() {
   return (
     <div className="App">
@@ -13,7 +13,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/add" element={<HomePage />} />
+        <Route path="/add" element={<AddBlog />} />
         <Route path="/about" element={<About />} />
         <Route path="/random" element={<Counter />} />
       </Routes>
