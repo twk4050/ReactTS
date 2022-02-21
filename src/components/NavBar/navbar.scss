@@ -1,0 +1,20 @@
+.wknav {
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0px;
+    margin-top: 2px;
+    padding-bottom: 10px;
+    font-size: xx-large;
+    background-color: cyan;
+
+    li {
+      margin-right: 100px;
+      padding-left: 1rem;
+      list-style-type: none;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

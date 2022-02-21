@@ -1,24 +1,28 @@
 import React from 'react'
 
-import './App.css'
+import './App.scss'
 
-import { useSelector, useDispatch } from 'react-redux'
-import { RootState } from './state'
-import { actionCreators } from './state'
+import { Routes, Route } from 'react-router-dom'
+
+import { HomePage, Counter, NavBar } from './components'
 
 function App() {
-  const counter = useSelector((state: RootState) => state.counter)
-  const dispatch = useDispatch()
-
   return (
     <div className="App">
-      <h1> hello world 2 </h1>
-
-      <h1> {counter.value} </h1>
-      <button onClick={() => dispatch(actionCreators.increment(100))}> increment </button>
-      <button onClick={() => dispatch(actionCreators.decrement(100))}> decrement </button>
+      {/* <h1> hello world 2 </h1> */}
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/add" element={<HomePage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/random" element={<Counter />} />
+      </Routes>
     </div>
   )
 }
 
 export default App
+
+function About() {
+  return <div>About</div>
+}
