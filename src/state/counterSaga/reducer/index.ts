@@ -1,22 +1,16 @@
-import { Action } from '../actions'
-import { ActionType } from '../action-types'
-
-interface CounterState {
-  value: number
-}
+import { ActionType, CounterState, Action } from '../types'
 
 const initialState: CounterState = {
-  value: 130,
+  value: 300,
 }
 
-export const counterReducer = (state: CounterState = initialState, action: Action) => {
+export const counterReducer = (state: CounterState = initialState, action: Action): CounterState => {
   switch (action.type) {
     case ActionType.INCREMENT:
       return {
         ...state,
         value: state.value + action.payload,
       }
-
     case ActionType.DECREMENT:
       return {
         ...state,

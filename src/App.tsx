@@ -5,7 +5,7 @@ import './App.scss'
 import { Routes, Route } from 'react-router-dom'
 
 import { HomePage, NavBar } from './components'
-import { Counter, AddBlog } from './components'
+import { Cake, AddBlog, CounterSaga, Users } from './components'
 function App() {
   return (
     <div className="App">
@@ -15,7 +15,16 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/add" element={<AddBlog />} />
         <Route path="/about" element={<About />} />
-        <Route path="/random" element={<Counter />} />
+        <Route
+          path="/random"
+          element={
+            <div>
+              <Users />
+              <CounterSaga />
+              <Cake />
+            </div>
+          }
+        />
       </Routes>
     </div>
   )
@@ -24,5 +33,12 @@ function App() {
 export default App
 
 function About() {
-  return <div>About</div>
+  return (
+    <div>
+      <h1>About Component</h1>
+      <h2> learning React </h2>
+      <p>implemented TypeScript / React-Router / Redux / Redux-Saga / SASS / CICD deployment on netlify</p>
+      <p>To Dos: Cypress E2E testing / deployment on linux </p>
+    </div>
+  )
 }

@@ -1,12 +1,12 @@
 import { ActionType } from '../action-types'
 
 interface IncrementAction {
-  type: ActionType.INCREMENT
+  type: ActionType.BUY_CAKE
   payload: number
 }
 
 interface DecrementAction {
-  type: ActionType.DECREMENT
+  type: ActionType.SELL_CAKE
   payload: number
 }
 

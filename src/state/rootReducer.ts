@@ -1,11 +1,16 @@
 import { combineReducers } from 'redux'
 
-import { counterReducer } from './counter'
+import { cakeReducer } from './cake'
 import { blogsReducer } from './blogs'
+import { counterReducer } from './counterSaga'
+import { usersReducer } from './users'
 
 const rootReducer = combineReducers({
-  counter: counterReducer,
+  cake: cakeReducer,
   blogs: blogsReducer,
+
+  counter: counterReducer,
+  users: usersReducer,
 })
 
 export default rootReducer

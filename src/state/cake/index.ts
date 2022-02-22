@@ -1,5 +1,5 @@
 export * as actionCreators from './action-creators'
-export * from './reducers'
+export * from './reducer'
 
 // rename actionCreators
 // need to export types ?

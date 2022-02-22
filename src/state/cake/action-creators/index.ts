@@ -2,16 +2,16 @@ import { ActionType } from '../action-types'
 // import { Dispatch } from 'redux'
 // import { Action } from '../actions'
 
-export const increment = (amount: number) => {
+export const buyCake = (amount: number) => {
   return {
-    type: ActionType.INCREMENT,
+    type: ActionType.BUY_CAKE,
     payload: amount,
   }
 }
 
-export const decrement = (amount: number) => {
+export const sellCake = (amount: number) => {
   return {
-    type: ActionType.DECREMENT,
+    type: ActionType.SELL_CAKE,
     payload: amount,
   }
 }
