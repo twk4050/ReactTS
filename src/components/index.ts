@@ -5,3 +5,4 @@ export * from './AddBlog/AddBlog'
 
 export * from './CounterSaga/CounterSaga'
 export * from './Users/Users'
+export * from './WKHookForm/WKHookForm'
